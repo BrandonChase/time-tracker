@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.brandonchase.timetracker.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="RESET TIMERS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="add"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Timer Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="hrs"
+        android:inputType="number"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Delete"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/options"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="mins"
+        android:inputType="number"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="secs"
+        android:inputType="number"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <ListView
+        android:id="@+id/timersListView"
+        android:layout_width="368dp"
+        android:layout_height="349dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+</android.support.constraint.ConstraintLayout>
